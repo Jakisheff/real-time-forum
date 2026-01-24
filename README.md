@@ -82,7 +82,7 @@ forum/
 ### Installation
 Clone the repository:
 ```bash
-git clone https://github.com/Jakisheff/real-time-forum.git
+git clone https://01.tomorrow-school.ai/git/azhakysh/real-time-forum.git
 cd real-time-forum
 ```
 

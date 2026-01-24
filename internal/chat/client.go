@@ -109,7 +109,7 @@ func (c *Client) ReadPump() {
 			// Let's send it to the 'Sender' via the hub routing logic?
 			// Actually, the Hub routing logic I wrote only sends to Receiver.
 			// Let's manually send to self here to confirm delivery.
-			c.Send <- bytes
+			//c.Send <- bytes
 		}
 	}
 }
