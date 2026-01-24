@@ -1,0 +1,37 @@
+:root {
+    --bg-color: #1a1a1a;
+    --text-color: #e0e0e0;
+    --card-bg: #2d2d2d;
+    --primary: #bb86fc;
+    --error: #cf6679;
+    --spacing: 1rem;
+}
+
+* { box-sizing: border-box; margin: 0; padding: 0; font-family: 'Courier New', monospace; }
+body { background: var(--bg-color); color: var(--text-color); display: flex; flex-direction: column; min-height: 100vh; }
+
+header { padding: var(--spacing); border-bottom: 2px solid var(--text-color); display: flex; justify-content: space-between; align-items: center; }
+.logo { font-size: 1.5rem; font-weight: bold; }
+#logout-btn { background: transparent; border: 1px solid var(--error); color: var(--error); padding: 0.5rem 1rem; cursor: pointer; display: none; }
+
+.container { flex: 1; display: flex; justify-content: center; align-items: center; padding: var(--spacing); }
+
+.card { background: var(--card-bg); padding: 2rem; border: 2px solid var(--text-color); width: 100%; max-width: 400px; box-shadow: 4px 4px 0px var(--text-color); }
+
+h2 { margin-bottom: 1.5rem; text-transform: uppercase; border-bottom: 1px solid var(--text-color); padding-bottom: 0.5rem; }
+
+.input-group { margin-bottom: 1rem; }
+.input-group label { display: block; margin-bottom: 0.5rem; font-size: 0.8rem; }
+.input-group input { width: 100%; padding: 0.8rem; background: #000; border: 1px solid var(--text-color); color: var(--text-color); }
+.input-group input:focus { outline: none; border-color: var(--primary); }
+
+.btn { width: 100%; padding: 1rem; background: var(--text-color); color: var(--bg-color); border: none; font-weight: bold; cursor: pointer; text-transform: uppercase; margin-top: 1rem; }
+.btn:hover { background: var(--primary); }
+.btn-link { background: none; border: none; color: var(--primary); text-decoration: underline; cursor: pointer; margin-top: 1rem; display: block; width: 100%; text-align: center; }
+
+.error-msg { color: var(--error); margin-bottom: 1rem; border: 1px solid var(--error); padding: 0.5rem; text-align: center; display: none; }
+
+/* Posts view specific */
+.post-list { width: 100%; max-width: 800px; }
+.post { border: 1px solid var(--text-color); padding: 1rem; margin-bottom: 1rem; background: var(--card-bg); }
+.post-header { display: flex; justify-content: space-between; margin-bottom: 0.5rem; font-size: 0.8rem; color: #888; }
